@@ -1,0 +1,12 @@
+English text
+
+I am Joana Mendes (Oporto, 1990), I am a degree in Graphic Designer from Institute 
+Politecnico do Cavado do Ave (2011), having 7 years of experience in the Communication 
+Design fields.
+I has been working in a wide range of areas from Branding and Editorial Design to 
+Packaging, Newsletters and Art Finisher,
+
+
+
+managment the website 
+socket.io message reply

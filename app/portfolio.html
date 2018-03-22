@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<img src="Images/Joana.jpg" style="width: 150px; height: 100px;">
+		</div>
+		<div id="navbar">
+			<a href="home.html">About</a>
+			<a href="feedb.html">Feedback</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="contact.html">Contact</a>
+			<a href="question.html">Questions</a>
+		</div>
+	</div>
+	<br>
+		<img id="myImg" src="Images/first.jpg" width="300px" alt="Infographic Journalism held in the second semester for the discipline of Computational Design. Technical knowledge at the level of vectorial design and elaboration of a graphic narrative. The digital tool used was Adobe Illustrator, presenting all kinds of infographs (map, graph, table, thematic study and written information). Printed graphic plan of 100x70. The typography used: Rotis Semi Sans.">
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="textImg"></div>
+		</div>
+		<img id="myImg" src="Images/second.jpg" width="300px" alt="A special range was developed with 3 varieties of Alsa Gelatins. The purpose of the project would therefore be to provide the target audience (children) and the Alsa brand with a special range of prepared and ready-to-eat gelatins, not having to use a spoon. Care was taken to wrap the six individual gelatin packs in one pack. Thus, we used the creation of a cylindrical package with figurative vectors of strawberry, pineapple and orange fruits, with a patterned background of colored stripes. Each package contains a representation of a slice of the fruit on top. A simulation of the integrated product was then created on a supermarket shelf.">
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img02">
+			<div id="textImg"></div>
+		</div>
+	<br>
+	<footer>
+		<h6>©2018 PRO`JOANA DESIGN · IDEAS FOR YOU</h6>
+	</footer>
+
+<script type="text/javascript">
+// Get the modal
+let modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" to write some text
+let img = document.getElementById('myImg');
+let modalImg = document.getElementById("img01");
+
+let captionText = document.getElementById("textImg");
+img.addEventListener('click', function() {
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+})
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.addEventListener('click', function () {
+	modal.style.display = "none";
+})
+
+
+/*let modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" to write some text
+
+let captionText = document.getElementById("textImg");
+
+function mode () {
+	let img = document.getElementById('image');
+	for (let i = 0; i < img.length; i++) {
+		modal.style.display = 'block';
+		img[i].scr = this.scr;
+		captionText.innerHTML = this.alt;
+	}
+};
+
+mode();
+
+document.getElementById('myImg',).addEventListener('click', function() {
+	mode()
+});
+
+let span = document.getElementsByClassName('close'[0]);
+span.addEventListener('click', function() {
+	modal.style.display = 'none';
+});*/
+</script>
+
+</body>
+</html>

@@ -1,0 +1,304 @@
+//This si the site home
+#header {
+	width: 100%;
+	height: 10%;
+	/*background: #FCFAF4;*/
+	position: fixed;
+}
+
+#navbar {
+	width: 1000px;
+	height: 80px;
+}
+
+#navbar a {
+	width: 150px;
+	list-style: none;
+	float: left;
+}
+
+#navbar a {
+	display: block;
+	color: black;
+	line-height: 40px;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	background: #E9F3F7;
+}
+
+#logo {
+	float: left;
+	padding-left: 40px;
+}
+
+.myslides {
+	display: none
+}
+
+#slide img {
+	vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container body {
+  /*max-width: 50%;*/
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  /*transition: background-color 0.6s ease;*/
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/*@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}*/
+
+/*This code is social media*/
+ul {
+	display: flex;
+	position: absolute;
+	top: 100%;
+	right: 0%;
+	transform: translate(-50%, -50%);
+}
+
+ul li {
+	list-style: none;
+}
+
+ul li a {
+	width: 30px;
+	/*height: 60px;*/
+	/*background: white;*/
+	text-align: center;
+	line-height: 30px;
+	/*font-size: 25px;*/
+	margin: 0 5px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	/*border: 1px solid black;*/
+	/*z-index: 1;*/
+}
+
+ul li a .fa {
+	position: relative;
+	color: #262626;
+	transition: .5s;
+	z-index: 3;
+}
+
+ul li a:hover .fa {
+	color: #fff;
+	transform: rotateY(360deg);
+}
+
+ul li a:before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: .5s;
+	z-index: 2;
+}
+
+ul li a:hover:before {
+	top: 0;
+}
+
+ul li:nth-child(1) a:before {
+	background: #3b5999;
+}
+
+ul li:nth-child(2) a:before {
+	background: #131418;
+}
+
+ul li:nth-child(3) a:before {
+	background: #0077B5;
+}
+
+#about {
+	/*margin-left: 150px;*/
+	margin-top: 280px;
+	/*border: 3px solid #73AD21;*/
+	text-align: center;
+	font-size: 15px;
+	font-family: helvetica;
+	float: left;
+}
+
+#about p {
+	margin-left: 200px;
+	margin-top: 150px;
+	/*border: 2px solid black;*/
+	display: block;
+}
+
+
+#about img {
+	float: left;
+	margin-left: 150px;
+}
+
+h6 {
+	margin-top: 7%;
+	font-family: helvetica;
+	float: right;
+}
+
+/*That is for the portfolio page*/
+/*img {
+	margin-top: 200px;
+	margin-left: 40px;
+}*/
+
+#myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+	margin-top: 200px;
+	margin-left: 40px;
+}
+
+#myImg:hover {
+	opacity: 0.7;
+}
+
+/*The bacground the model*/
+.modal {
+	display: none; /*Hidden the iamge*/
+	position: fixed; /*To stay in same place*/
+	z-index: 1; 
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow: auto;
+	background-color: black;
+	background-color: rgba(0,0,0,0.9);
+}
+
+/*Modal content image*/
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 100%;
+	max-width: 500px;
+}
+
+/*text the image*/
+#textImg {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+	height: 150px;
+}
+
+/*Close the button*/
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+/*#second {
+	float: left;
+}*/
+
+ /*This is work the questions/chat-box*/
+.photo {
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.chat-box {
+	box-sizing: border-box;
+	text-align: center;
+	margin: 150px;
+}
+
+/*Page contact*/
+
+#boxform {
+	margin-top: 100px;
+}
