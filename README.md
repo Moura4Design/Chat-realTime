@@ -3,6 +3,7 @@ Project Overview:
 This project was developed during my studies at New York Code + Academy as the final project of the course. It features a real-time chat system alongside a small website, created using a Node.js application with several key functionalities: static page services, form submission handling with CAPTCHA verification, storing feedback in a SQLite database, and enabling real-time communication via WebSockets.
 
 Technologies Used in Node.js:
+
 Node.js: JavaScript runtime environment for building scalable applications.
 Express: Web framework for handling HTTP routes and middleware.
 Socket.IO: Enables real-time, two-way communication between the client and server.
